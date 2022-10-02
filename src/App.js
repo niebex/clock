@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Clock from "./components/Clock";
+import "./App.css";
+import CustomNavbar from "./components/CustomNavbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid App">
+      <div className={"row"}>
+        <CustomNavbar />
+      </div>
+      <div className={"row my-4"}>
+        <div className={"col-xs-12 col-sm-12 col-md-4 col-lg-3 mx-auto"}>
+          <Clock />
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
