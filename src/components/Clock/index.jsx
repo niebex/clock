@@ -4,7 +4,8 @@ const Clock = () => {
   const [currentTime, setCurrentTime] = React.useState(new Date());
 
   React.useEffect(() => {
-    setInterval(moveClock, 1000);
+    const intervalId = setInterval(moveClock, 1000);
+    return () => clearInterval(intervalId);
   }, []);
 
   const moveClock = () => {
