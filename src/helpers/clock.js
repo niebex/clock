@@ -17,7 +17,7 @@ export function getMinuteHandRotationAngle(date) {
 }
 
 /**
- * This is to calculate the angle at which Hour hand will rotate
+ * This is to calculate the angle at which Second hand will rotate
  * @param {Date} date
  * @returns {Number} angle
  */

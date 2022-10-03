@@ -1,5 +1,6 @@
 import * as React from "react";
 import ClockHands from "./childrens/ClockHands";
+import ClockHours from "./childrens/ClockHours";
 
 export default function AnalogClock() {
   const [date, setDate] = React.useState(new Date());
@@ -18,6 +19,7 @@ export default function AnalogClock() {
     <div className="clock">
       <ClockHands date={date} />
       <span className="center-dot" />
+      <ClockHours />
     </div>
   );
 }
