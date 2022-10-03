@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.clock-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+  background-image: url('../../public/assets/images/clock-background.jpg');
+  background-size: cover;
+}
+
+.center-dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 12px;
+  background-color: #a9a58a;
+  border: 2px solid white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hour-hand {
+  position: absolute;
+  width: 6px;
+  height: 60px;
+  background: lemonchiffon;
+  top: 30%;
+  left: 49%;
+  transform-origin: bottom;
+}
+
+.minute-hand {
+  position: absolute;
+  width: 4px;
+  height: 80px;
+  background: lemonchiffon;
+  top: 22.5%;
+  left: 49%;
+  transform-origin: bottom;
+}
+
+.second-hand {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background: lemonchiffon;
+  top: 16.5%;
+  left: 50%;
+  transform-origin: bottom;
+}
+
+.clock-hour {
+  position: absolute;
+  font-size: 22px;
+  font-weight: 900;
+  color: lemonchiffon;
+}
+
+.one {
+  top: 10%;
+  right: 26%;
+}
+
+.two {
+  top: 25%;
+  right: 10%;
+}
+
+.three {
+  right: 10px;
+  top: 46%;
+}
+
+.four {
+  right: 30px;
+  top: 67%;
+}
+
+.five {
+  right: 78px;
+  top: 80%;
+}
+
+.six {
+  bottom: 10px;
+  left: 48%;
+}
+
+.seven {
+  left: 80px;
+  top: 82%;
+}
+
+.eight {
+  left: 30px;
+  top: 67%;
+}
+
+.nine {
+  left: 10px;
+  top: 46%;
+}
+
+.ten {
+  top: 25%;
+  left: 10%;
+}
+
+.eleven {
+  top: 10%;
+  left: 26%;
+}
+
+.twelve {
+  top: 10px;
+  left: 46%;
+}
